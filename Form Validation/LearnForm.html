@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnForm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="form" method="post" action="#">
+    <div class="form-container">
+
+      <div class="form-left">
+        <fieldset>
+          <legend>PERSONAL DETAILS</legend>
+
+          <label for="fullName">Name</label>
+          <input type="text" id="fullName" name="fullName">
+
+          <label for="initial">Initials</label>
+          <input type="text" id="initial" name="initial">
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+
+          <label>Gender</label>
+          <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="Others">
+            <label for="others">Others</label>
+          </div>
+
+          <label for="nationality">Nationality</label>
+          <input type="text" id="nationality" name="nationality">
+
+          <label for="marital-status">Marital Status</label>
+          <input type="text" id="marital-status" name="marital-status">
+        </fieldset>
+
+        <fieldset>
+          <legend>CONTACT DETAILS</legend>
+
+          <label for="ph-num">Phone Number</label>
+          <input type="number" id="ph-num" name="ph-num">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <label for="resi-add">Residential Address</label>
+          <input type="text" id="resi-add" name="resi-add">
+
+          <label for="perm-add">Permanent Address</label>
+          <input type="text" id="perm-add" name="perm-add">
+
+          <label for="pin-code">Pincode</label>
+          <input type="text" id="pin-code" name="pin-code" maxlength="6">
+        </fieldset>
+
+        <fieldset>
+          <legend>FAMILY DETAILS</legend>
+
+          <label for="father-name">Father's Name</label>
+          <input type="text" id="father-name" name="father-name">
+
+          <label for="mother-name">Mother's Name</label>
+          <input type="text" id="mother-name" name="mother-name">
+
+          <label for="guard-name">Guardian's Name</label>
+          <input type="text" id="guard-name" name="guard-name">
+
+          <label for="emer-person">Emergency Contact Person</label>
+          <input type="text" id="emer-person" name="emer-person">
+
+          <label for="emer-contact">Emergency Contact Number</label>
+          <input type="text" id="emer-contact" name="emer-contact" maxlength="10">
+        </fieldset>
+      </div>
+
+      <div class="form-right">
+        <fieldset>
+          <legend>EDUCATIONAL DETAILS</legend>
+
+          <label for="sslc-mark">SSLC Total Marks</label>
+          <input type="text" id="sslc-mark" name="sslc-mark" maxlength="3">
+
+          <label for="sslc-passedout">SSLC Passed out Year</label>
+          <input type="text" id="sslc-passedout" name="sslc-passedout" maxlength="4">
+
+          <label for="hsc-mark">HSC Total Marks</label>
+          <input type="text" id="hsc-mark" name="hsc-mark" maxlength="3">
+
+          <label for="hsc-passedout">HSC Passed out Year</label>
+          <input type="text" id="hsc-passedout" name="hsc-passedout" maxlength="4">
+
+          <label for="ug-mark">UG Percentage</label>
+          <input type="text" id="ug-mark" name="ug-mark" maxlength="2">
+
+          <label for="ug-passout">UG Passed out Year</label>
+          <input type="text" id="ug-passout" name="ug-passout" maxlength="4">
+
+          <label for="pg-mark">PG Percentage</label>
+          <input type="text" id="pg-mark" name="pg-mark" maxlength="2">
+
+          <label for="pg-passout">PG Passed out Year</label>
+          <input type="text" id="pg-passout" name="pg-passout" maxlength="4">
+
+          <label for="resume">Upload Resume</label>
+          <input type="file" id="resume" name="resume">
+        </fieldset>
+
+        <fieldset>
+          <legend>GOVERNMENT DETAILS</legend>
+
+          <label for="aadhar">Aadhar Number</label>
+          <input type="text" id="aadhar" name="aadhar" maxlength="12">
+
+          <label for="pancard">PAN Number</label>
+          <input type="text" id="pancard" name="pancard" maxlength="10">
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="FormValidation.js"></script>
+</body>
+</html>

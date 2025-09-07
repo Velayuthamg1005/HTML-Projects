@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ManyLayout</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background: #cccccc;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .main-area {
+            display: flex;
+            flex: 1;
+            min-height: 200px;
+        }
+        .leftnav {
+            background: #e0e0e0;
+            width: 120px;
+            text-align: center;
+        }
+        .content {
+            background: #ededed;
+            flex: 1;
+            text-align: center;
+        }
+        .rightnav {
+            background: #e0e0e0;
+            width: 120px;
+            text-align: center;
+        }
+        .footer {
+            background: #cccccc;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Header
+    </div>
+    <div class="main-area">
+        <div class="leftnav">Leftnav</div>
+        <div class="content">Content</div>
+        <div class="rightnav">Rightnav</div>
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>
